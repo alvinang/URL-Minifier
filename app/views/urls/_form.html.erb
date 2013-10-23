@@ -1,0 +1,6 @@
+<%= form_for @url, role: 'form', html: {class: 'form-inline'}, method: :post do |f| %>
+  <div class="form-group">
+    <%= f.text_field :long_url, placeholder: "Enter URL", required: 'true', class: 'form-control' %>
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+<% end %>
