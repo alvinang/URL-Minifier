@@ -1,5 +1,8 @@
 class UrlsController < ApplicationController
   include UrlsHelper
+
+  before_action :authenticate_user!, except: [:new, :redirect, :create]
+
   def new
     @url = Url.new
   end
