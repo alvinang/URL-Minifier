@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131022213432) do
+ActiveRecord::Schema.define(version: 20131024011604) do
 
   create_table "urls", force: true do |t|
     t.string   "long_url"
@@ -19,5 +19,14 @@ ActiveRecord::Schema.define(version: 20131022213432) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "visits", force: true do |t|
+    t.integer  "url_id"
+    t.integer  "count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "visits", ["url_id"], name: "index_visits_on_url_id"
 
 end

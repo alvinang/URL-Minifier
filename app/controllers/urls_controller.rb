@@ -9,6 +9,10 @@ class UrlsController < ApplicationController
     if @url
       @url.short_url = magic_url_minifier
       @url.save
+      visit = Visit.new
+      visit.url_id = @url.id
+      visit.count = 0
+      visit.save
     end
 
     render 'result'
@@ -20,7 +24,11 @@ class UrlsController < ApplicationController
 
   def redirect
     @url = Url.find_by_short_url(params[:short_url])
-    redirect_to "http://#{@url.long_url}"
+    if @url
+      redirect_to "http://#{@url.long_url}"
+      new_visit
+    end
+
   end
 
   private
