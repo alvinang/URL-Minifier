@@ -3,14 +3,14 @@
 URL Minifier - minifies any url and stores that information in your db.
 
 These are the features:
-* Devise authentication with omniauth
+* Devise authentication
+* Dashboard to view urls and visits
 
 ### To do
 
 * Handle cases where input is not a url
 * Handle cases where redirect gives an error
-* Count number of visits
-* Potentially using devise to allow user to create accounts - thay way, they can track number of hits
+* Backbone for smooth row addition in dashboard
 
 ### Questions/Comments
 
