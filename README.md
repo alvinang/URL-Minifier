@@ -2,6 +2,9 @@
 
 URL Minifier - minifies any url and stores that information in your db.
 
+These are the features:
+* Devise authentication with omniauth
+
 ### To do
 
 * Handle cases where input is not a url

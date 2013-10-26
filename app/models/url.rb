@@ -4,4 +4,5 @@ class Url < ActiveRecord::Base
   validates_uniqueness_of :short_url
 
   has_one :visit
+  belongs_to :user
 end
