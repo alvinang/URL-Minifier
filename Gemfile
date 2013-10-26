@@ -14,6 +14,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 gem 'devise'
 gem 'omniauth-twitter'
 gem 'figaro'
+gem 'backbone-on-rails'
 
 group :doc do
   gem 'sdoc', require: false

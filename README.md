@@ -10,7 +10,7 @@ These are the features:
 
 * Handle cases where input is not a url
 * Handle cases where redirect gives an error
-* Backbone for smooth row addition in dashboard
+* Backbone for smooth row addition in dashboard (halfway)
 
 ### Questions/Comments
 

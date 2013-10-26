@@ -2,23 +2,4 @@
 
 <%= render 'shared/url_form' %>
 
-<table class="table table-striped table-hover table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>URL</th>
-      <th>Minified URL</th>
-      <th>Visits</th>
-    </tr>
-  </thead>
-  <tbody class="text-left">
-    <% @data.each_with_index do |url, index| %>
-    <tr>
-      <td><%= index + 1 %></td>
-      <td><%= url.long_url %></td>
-      <td><%= root_url + url.short_url %></td>
-      <td><%= url.count %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= render 'dashboard/dashboard_table' %>
