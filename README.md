@@ -6,7 +6,7 @@ These are the features:
 * Devise authentication
 * Dashboard to view urls and visits
 
-### To do
+### To do (Work in progress)
 
 * Handle cases where input is not a url
 * Handle cases where redirect gives an error
@@ -14,4 +14,4 @@ These are the features:
 
 ### Questions/Comments
 
-Contact me on (GitHub)[https://github.com/alvinang] for questions.
+Contact me on [GitHub](https://github.com/alvinang) for questions.
