@@ -17,7 +17,7 @@ gem 'figaro'
 gem 'backbone-on-rails'
 
 group :doc do
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 
 group :development, :test do
